@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="visuel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+-->
+</head>
+
+<body>
+
+  <main>
+
+    <section id="profilUtilisateur">
+      <div id="divUneProfilUtilisateur">
+        <img id="imageProfil" src="images/image-jeremy.png" alt="image-jeremy">
+        <div>
+          <span id="report">Report for</span><br>
+          <span id="jeremy">Jeremy Robson</span>
+        </div>
+      </div>
+      <div id="choice">
+        <span id="daily">
+          Daily
+        </span>
+        <span id="weekly">
+          Weekly
+        </span>
+        <span id="monthly">
+          Monthly
+        </span>
+      </div>
+    </section>
+
+    <section id="sectionMainDivs">
+
+      <section id="work" class="sectionActivites">
+        <img class="images" src="images/icon-work.svg" alt="work">
+        <div class="sousDivActivites">
+          <div class="activityTime">
+            <span class="activityName">
+              Work
+            </span>
+            <span>
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </span>
+          </div>
+          <!-- daily -->
+          <div class="previousTime">
+            <span class="activityHours">
+              5hrs
+            </span>
+            <span class="spanPreviousTime">
+              Previous - 7hrs
+            </span>
+          </div>
+        </div>
+        <!-- daily -->
+        <!--
+      32hrs
+       weekly 
+      Previous - 36hrs
+       weekly 
+      103hrs
+       monthly
+      Previous - 128hrs
+      monthly
+    -->
+      </section>
+
+      <section id="play" class="sectionActivites">
+        <img class="images" src="images/icon-play.svg" alt="work">
+        <div class="sousDivActivites">
+          <div class="activityTime">
+            <span class="activityName">
+              Play
+            </span>
+            <span>
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </span>
+          </div>
+          <!-- daily -->
+          <div class="previousTime">
+            <span class="activityHours">
+              1hrs
+            </span>
+            <span class="spanPreviousTime">
+              Previous - 2hrs
+            </span>
+          </div>
+        </div>
+        <!-- daily 
+      10hrs
+       weekly 
+      Previous - 8hrs
+      weekly
+      23hrs
+      monthly
+      Previous - 29hrs
+      monthly -->
+      </section>
+
+      <section id="study" class="sectionActivites">
+        <img class="images" src="images/icon-study.svg" alt="work">
+        <div class="sousDivActivites">
+          <div class="activityTime">
+            <span class="activityName">
+              Study
+            </span>
+            <span>
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </span>
+          </div>
+          <!-- daily -->
+          <div class="previousTime">
+            <span class="activityHours">
+              0hrs
+            </span>
+            <span class="spanPreviousTime">
+              Previous - 1hrs
+            </span>
+          </div>
+        </div>
+        <!-- daily
+      4hrs
+       weekly 
+      Previous - 7hrs
+      weekly
+      13hrs
+      monthly
+      Previous - 19hrs
+      monthly -->
+      </section>
+
+      <section id="exercise" class="sectionActivites">
+        <img class="images" src="images/icon-exercise.svg" alt="work">
+        <div class="sousDivActivites">
+          <div class="activityTime">
+            <span class="activityName">
+              Exercise
+            </span>
+            <span>
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </span>
+          </div>
+          <!-- daily -->
+          <div class="previousTime">
+            <span class="activityHours">
+              1hrs
+            </span>
+            <span class="spanPreviousTime">
+              Previous - 1hrs
+            </span>
+          </div>
+        </div>
+        <!-- daily
+      4hrs
+      weekly
+      Previous - 5hrs
+      weekly
+      11hrs
+      monthly
+      Previous - 18hrs
+      monthly -->
+      </section>
+
+      <section id="social" class="sectionActivites">
+        <img class="images" src="images/icon-social.svg" alt="work">
+        <div class="sousDivActivites">
+          <div class="activityTime">
+            <span class="activityName">
+              Social
+            </span>
+            <span>
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </span>
+          </div>
+          <!-- daily -->
+          <div class="previousTime">
+            <span class="activityHours">
+              1hrs
+            </span>
+            <span class="spanPreviousTime">
+              Previous - 3hrs
+            </span>
+          </div>
+        </div>
+        <!-- daily
+      5hrs
+      weekly
+      Previous - 10hrs
+      weekly
+      21hrs
+       monthly
+      Previous - 23hrs
+      monthly -->
+      </section>
+
+      <section id="selfCare" class="sectionActivites">
+        <img class="images" src="images/icon-self-care.svg" alt="work">
+        <div class="sousDivActivites">
+          <div class="activityTime">
+            <span class="activityName">
+              Self Care
+            </span>
+            <span>
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </span>
+          </div>
+          <!-- daily -->
+          <div class="previousTime">
+            <span class="activityHours">
+              0hrs
+            </span>
+            <span class="spanPreviousTime">
+              Previous - 1hrs
+            </span>
+          </div>
+        </div>
+        <!-- daily
+      2hrs
+      weekly
+      Previous - 2hrs
+      weekly
+      7hrs
+      monthly
+      Previous - 11hrs
+      monthly -->
+      </section>
+
+    </section>
+
+  </main>
+
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+
+  <script type="text/javascript" src="time_tracking.js"></script>
+
+
+</body>
+
+</html>
